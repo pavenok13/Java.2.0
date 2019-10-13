@@ -1,6 +1,6 @@
 package TASK_4;
 /**
- * @author Aleksandr Nikishin
+ * @author Stolyarchuk Andrey
  */
 public class Slozhenie extends Operation {
     public Slozhenie(double a, double b, int oper) {

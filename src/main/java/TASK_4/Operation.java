@@ -34,11 +34,11 @@ public class Operation {
     public String toString() {
         return "*****";
     }
-    public double getA() {
-        return a;
+    public int getA() {
+        return (int) a;
     }
-    public double getB() {
-        return b;
+    public int getB() {
+        return (int) b;
     }
     public int getOper() {
         try {
