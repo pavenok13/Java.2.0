@@ -22,7 +22,7 @@ public class TASK_3_1 {
             }
         }
         for (int i = 0; i < intArr.length; i++) {
-            if (intArr[i] < min) {
+            if (intArr[i] < 0) {
                 min = intArr[i];
                 posmin1 = i;
             }
@@ -31,7 +31,7 @@ public class TASK_3_1 {
                 posmax2 = i;
             }
         }
-        System.out.println("Максимальный отрицательный эл-т массива: " + min);
+        System.out.println("Максимальный отрицательный эл-т массива: " + min );
         System.out.println("Минимальный положительный эл-т массива: " + max);
         intArr[posmin1] = max;
         intArr[posmax2] = min;
