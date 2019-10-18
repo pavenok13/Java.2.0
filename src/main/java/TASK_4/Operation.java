@@ -30,15 +30,17 @@ public class Operation {
             System.out.println("Вводимое число должно иметь целочисленный тип (Integer)");
         }
     }
+
     @Override
     public String toString() {
         return "*****";
     }
-    public int getA() {
-        return (int) a;
+
+    public double getA() {
+        return a;
     }
-    public int getB() {
-        return (int) b;
+    public double getB() {
+        return b;
     }
     public int getOper() {
         try {

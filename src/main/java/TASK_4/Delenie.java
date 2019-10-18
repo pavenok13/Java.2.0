@@ -3,10 +3,11 @@ package TASK_4;
  * @author Stolyarchuk Andrey
  */
 public class Delenie extends Operation {
-    public Delenie(int a, int b, int oper) {
+    public Delenie(double a, double b, int oper) {
         super(a, b, oper);
     }
-    public int doDel() {
+    public double doDel() {
+        if (getB() == 0) throw new ArithmeticException();
         return getA() / getB();
     }
     @Override
