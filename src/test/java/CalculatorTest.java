@@ -38,4 +38,10 @@ public class CalculatorTest {
         double res = umnozhenie.doUmn();
         assertEquals("Не прошла проверка оператора умножения", 19.0, res);
     }
+    @Test
+    public void IOException () {
+        Delenie delenie = new Delenie(84, 0, 3);
+        double res = delenie.doDel();
+        assertEquals("Не прошла проверка оператора деления", "Ошибка, делить на 0 нельзя" , res);
+    }
 }
