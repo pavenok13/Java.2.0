@@ -43,11 +43,9 @@ public class CalculatorTest {
     }
 
     @Test(expected = ArithmeticException.class)
-    public void testDivideByZero() {
+    public void testDivideByZero()throws ArithmeticException {
         Delenie delenie = new Delenie(84, 0, 3);
         double res = delenie.doDel();
-        try {
-            Assert.fail("Не прошла проверка оператора " + res);
-        } catch(ArithmeticException e ) { }
+        Assert.fail("Не прошла проверка оператора " + res);
     }
 }
